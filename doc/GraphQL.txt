@@ -1,0 +1,78 @@
+query{
+  getAllProducts {
+    id
+    nombre
+    descripcion
+    codigo
+    precio
+    stock
+    thumbnail
+    timeStamp
+  }
+}
+
+
+# query{
+#   getProductById(id:"6305b6907c81e28f5ffc0b14") {
+#     id
+#     nombre
+#     descripcion
+#     codigo
+#     precio
+#     stock
+#     thumbnail
+#     timeStamp
+#   }
+# }
+
+
+# mutation{
+#   createProduct(producto:{
+#     nombre: "CD Kung Fu 10",
+#     descripcion: "Octavo álbum de la banda 10",
+#     codigo: "C003 10",
+#     precio: 1205,
+#     stock: 50,
+#     thumbnail: "https://www.pezdebuenosaires.com.ar/imagenes/tapas_de_discos/kungfu_grande.jpg"
+#   })
+#   {
+#     id
+#     nombre
+#     descripcion
+#     codigo
+#     precio
+#     stock
+#     thumbnail
+#     timeStamp
+#   }
+# }
+
+
+# mutation{
+#   editProductById(id:"630ee6bede6c2239a754296a", producto:{
+#     nombre: "CD Kung Fu 20",
+#     descripcion: "Octavo álbum de la banda 20",
+#     codigo: "C003 20",
+#     precio: 1205,
+#     stock: 1000,
+#     thumbnail: "https://www.pezdebuenosaires.com.ar/imagenes/tapas_de_discos/kungfu_grande.jpg"
+#   })
+#   {
+#     id
+#     nombre
+#     descripcion
+#     codigo
+#     precio
+#     stock
+#     thumbnail
+#     timeStamp
+#   }
+# }
+
+
+# mutation{
+#   deleteProductById(id:"630ee6bede6c2239a754296a")
+#   {
+#     id
+#   }
+# }
